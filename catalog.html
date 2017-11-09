@@ -7,7 +7,7 @@
 <body>
 	<header class="main-header">
 		<section class="header-menu">
-			<span class="header-logo">Техномарт</span>
+			<h1 class="header-logo">Техномарт</h1>
 			<!--Форма поиска-->
 			<ul class="user-activities">
 				<li>Закладки: 0</li>
@@ -16,24 +16,26 @@
 			</ul>
 			
 		</section>
+<!-- Хедер и футер не проверяю. Их сделай по аналогии с индексом -->
+ 		<div class="header-info">
+			<p class="slogan">
+				Интернет магазин<br>
+				строительных материалов<br>
+				и инструментов для ремонта
+			</p>
+			<p class="contacts">
+				<span class="header-phone">+7 (812) 555-05-55</span>
+				г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8		
+			</p>
 
-		<p class="slogan">
-			Интернет магазин<br>
-			строительных материалов<br>
-			и инструментов для ремонта
-		</p>
-		<p class="contacts">
-			<span class="header-phone">+7 (812) 555-05-55</span>
-			г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8		
-		</p>
-
-		<section class="user-interface">
-			<ul>
-				<li class="user-name">Равшан Джамшутович</li>
-				<li><a href="#">Мои заказы</a></li>
-				<li><a href="#">Личный кабинет</a></li>
-			</ul>			
-		</section>
+			<section class="user-interface">
+				<ul>
+					<li class="user-name">Равшан Джамшутович</li>
+					<li><a href="#">Мои заказы</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+				</ul>			
+			</section>
+		</div>
 		
 		<nav>
 			<ul class="main-menu">
@@ -50,73 +52,113 @@
 
 	<main>
 		<ul class="breadcrumbs">
-			<li>Каталог</li>
-			<li>Инструмент</li>
-			<li>Перфораторы</li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Инструмент</a></li>
+			<li><a href="#">Перфораторы</a></li>
+<!-- Это все должно быть ссылками. Текст внутри li оберни в ссылки -->
 		</ul>
 		<h1>Перфораторы</h1>
 		<!--здесь будет форма с фильтрами-->
 
 		<section class="goods">
-			<ul class="sorting-options">
-				<li>Сортировка:</li>
+			<span>Сортировка:</span>
+			<ul class="sorting-options">		
+<!-- `Сортировка` нужно вынести из состава списка. Это не элемент списка.  -->
 				<li><a href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По функционалу</a></li>
-				<li class="up"><a href="#"></a></li>
-				<li class="down"><a href=""></a></li>
+				<li class="up"><a href="#">По возрастанию</a></li>
+<!-- У стрелочек должно быть текстовое описание (например "По возрастанию" и "По убыванию") -->
+				<li class="down"><a href="#">По убыванию</a></li>
 			</ul>
 			<ul class="goods-list">
 				<li>
+<!-- Карточки товаров я не проверяю, они должны быть выполнены также как на главной. -->
  					<img src="#" alt="Перфоратор BOSH BFG 3000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 3000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li>
  					<img src="#" alt="Перфоратор BOSH BFG 6000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 6000</h3>
 					<span class="old-price"><del>30500 Р.</del></span>
 					<span class="new-price">25500 Р.</span>
 				</li>
 				<li class="new">
  					<img src="#" alt="Перфоратор BOSH BFG 2000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 2000</h3>
 					<span class="old-price hidden"><del>12500 Р.</del></span>
 					<span class="new-price">12500 Р.</span>
 				</li>
 				<li>
  					<img src="#" alt="Перфоратор BOSH BFG 3000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 3000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li class="new">
  					<img src="#" alt="Перфоратор BOSH BFG 6000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 6000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li>
  					<img src="#" alt="Перфоратор BOSH BFG 2000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 2000</h3>
 					<span class="old-price hidden"><del>12500 Р.</del></span>
 					<span class="new-price">12500 Р.</span>
 				</li>
 				<li class="new">
  					<img src="#" alt="Перфоратор BOSH BFG 3000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 3000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li>
  					<img src="#" alt="Перфоратор BOSH BFG 6000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 6000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li>
  					<img src="#" alt="Перфоратор BOSH BFG 2000">
+ 					<p class="item-links visually-hidden">
+						<a href="#">Купить</a>
+						<a href="#">В закладки</a>
+					</p>
 					<h3> Перфоратор BOSH BFG 2000</h3>
 					<span class="old-price hidden"><del>12500 Р.</del></span>
 					<span class="new-price">12500 Р.</span>
@@ -141,13 +183,15 @@
 		</section>
 
 	</main>
-
+<!-- Футер не проверяю. Его аналогично индексу. -->
 	<footer>
-		<span class="logo">ТЕХНОМАРТ</span>
-		<p class="footer-contacts">
-			г.Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
-			+7 (812) 555-05-55			
-		</p>
+		<div class="footer-contacts">
+			<a href="#" class="footer-logo">ТЕХНОМАРТ</a>
+			<p>
+				г.Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
+				+7 (812) 555-05-55			
+			</p>
+		</div>
 		<ul class="footer-navigation">
 			<li><a href="#">Компания</a></li>
 			<li><a href="#">Новости</a></li>
@@ -171,11 +215,12 @@
 			</ul>
 			<p class="feedback">
 				Обратная связь:<br>
-				mail@htmlacademy.ru
+				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 			</p>
+
 			<p class="developer">
 				Разработано -<br>
-				htmlacademy.ru
+				<a href="htmlacademy.ru">htmlacademy.ru</a>
 			</p>
 		</div>		
 	</footer>
