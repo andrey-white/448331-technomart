@@ -8,7 +8,6 @@
 	<header class="main-header">
 		<section class="header-menu">
 			<h1 class="header-logo">Техномарт</h1>
-<!-- Логотип можно выделить в заголовок первого уровня -->
 			<!--Форма поиска-->
 			<ul class="user-activities">
 				<li>Закладки: 0</li>
@@ -34,8 +33,7 @@
 				</ul>			
 			</section>
 		</div>
-<!-- <p class="slogan">, <p class="contacts"> и <section class="user-interface"> необходимо обернуть в Див -->
-		
+
 		<nav>
 			<ul class="main-menu">
 				<li><a href="#">Главная</a></li>
@@ -54,10 +52,8 @@
 			<div class="promo-top">
 				<div class="promo-item"> 
 					<h3>Материалы</h3>
-	<!-- "Материалы" можно сделать заголовком h3. На остальных картах категорий товаров тоже самое. -->
 					<a href="#">На любой вкус</a>
 				</div>
-	<!-- Карточки категорий товаров с точки зрения стилизации обсолютно одинаковые, поэтому они должны иметь одинаковый класс (например promo-item). А их различия - цвет и декоративное изображение возьмет на себя дополнительный класс, который у каждой карточки будет индивидуальным. В итоге у тебя должно получиться что-то типа такого: <div class="promo-item promo-item-materials"> - это для материалов. Для иснструмента будет так <div class="promo-item promo-item-tools"> . И так далее. -->
 				<div class="promo-item">
 					<h3>Инструмент</h3>
 					<a href="#">На все случаи</a>
@@ -76,7 +72,6 @@
 					<h3>Доставка</h3>
 					<a href="#">Бесплатно</a>
 				</div>
-	<!-- Для удобства в позиционировании, я рекомендую обернуть карты товаров Материалы, Инструмент, Техника в Див. Слайдер и правие блоки Скидки и Доставка в другой Див.-->
 				<div class="promo-slider">
 					<p class="slider-header">
 						<b>Перфораторы</b><br>
@@ -91,13 +86,11 @@
 		<section class="popular-items">
 			<div class="popular">
 				<h2>Популярные товары:</h2>
-	<!-- блок с текстом "Популярные товары:" и кнопкой целесообразно выделить в отдельный логический элемент, так как идентичные с точки зрения стилизации блоки будут встречаться далее. Должно получиться что-то типа такого <div class="popular"><h2>Популярные товары:</h2><a href="#">Все популярные товары</a></div>. -->
 				<a href="#">Все популярные товары</a>
 			</div>
 			<ul class="popular-items-slider">
 				<li>
-<!-- Отсутствует всплывающее при наведении окно с ссылками -->
-					<img src="#" alt="Перфоратор BOSH BFG 9000">
+					<img src="img/bfg_9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
 					<p class="item-links visually-hidden">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
@@ -107,7 +100,7 @@
 					<span class="new-price">25500 Р.</span>
 				</li>
 				<li>
-					<img src="#" alt="Перфоратор BOSH BFG 3000">
+					<img src="img/bfg_3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
 					<p class="item-links visually-hidden">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
@@ -117,7 +110,7 @@
 					<span class="new-price">15500 Р.</span>
 				</li>
 				<li>
-					<img src="#" alt="Перфоратор BOSH BFG 6000">
+					<img src="img/bfg_6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 					<p class="item-links visually-hidden">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
@@ -127,7 +120,7 @@
 					<span class="new-price">25500 Р.</span>
 				</li>
 				<li>
-					<img src="#" alt="Перфоратор BOSH BFG 2000">
+					<img src="img/bfg_2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
 					<p class="item-links visually-hidden">
 						<a href="#">Купить</a>
 						<a href="#">В закладки</a>
@@ -142,58 +135,55 @@
 		<section class="popular-manufacturers">
 			<div class="popular">
 				<h2>Популярные производители:</h2>
-	<!-- Про этот блок писал выше. Он такойже, отличается только текстом. -->
 				<a href="#">Все производители</a>
 			</div>
 			<ul class="popular-manufacturers-list">
 				<li>
 					<h3 class="visually-hidden">Bosh</h3>
-<!-- Для скрытых элементов существует класс visually-hidden. Если на вебинарах про него еще не рассказывали, то обязательно расскажут.  -->
-<!-- Вытяжка из ТЗ: "3.9. Блок «Популярные производители»: карточка производителя является ссылкой."" -->
 					<a href="#">
-						<img src="#" alt="Bosch">
+						<img src="img/bosch.png" width="126" height="37" alt="Bosch">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">Makita</h3>	
 					<a href="#">
-						<img src="#" alt="Makita">
+						<img src="img/makita.png" width="123" height="40" alt="Makita">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">Dewalt</h3>
 					<a href="#">
-						<img src="#" alt="Dewalt">
+						<img src="img/dewalt.png" width="146" height="44" alt="Dewalt">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">Интерскол</h3>
 					<a href="#">
-						<img src="#" alt="Интерскол">
+						<img src="img/interscol.png" width="200" height="88" alt="Интерскол">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">Hitachi</h3>
 					<a href="#">
-						<img src="#" alt="Hitachi">
+						<img src="img/hitachi.png" width="169" height="31" alt="Hitachi">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">LG</h3>
 					<a href="#">
-						<img src="#" alt="LG">
+						<img src="img/lg.png" width="121" height="73" alt="LG">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">AEG</h3>
 					<a href="#">
-						<img src="#" alt="AEG">
+						<img src="img/aeg.png" width="151" height="96" alt="AEG">
 					</a>
 				</li>
 				<li>
 					<h3 class="visually-hidden">Metabo</h3>
 					<a href="#">
-						<img src="#" alt="Metabo">
+						<img src="img/metabo.png" width="204" height="69" alt="Metabo">
 					</a>
 				</li>
 			</ul>
@@ -206,8 +196,6 @@
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 			</p>
 			<ul class="services-menu">
-<!-- Для оживления слайдера будут необходимы <input type="radio"> c <label>. Так вот Доставка, Гарантия, Кредит являются этими <label>. -->
-	<!-- про эти слайдеры вам будут рассказывать на вебинарах и еще можно просмотреть курсы академии про слайдеры вот тут https://htmlacademy.ru/courses/76 . Уроки Слайдер на CSS, шаг 1-3. -->
 				<li><label><input type="radio">Доставка</label></li>
 				<li><label><input type="radio">Гарантия</label></li>
 				<li><label><input type="radio">Кредит</label></li>
@@ -239,7 +227,6 @@
 				</p>
 				<a href="#" class="credit-request">Отправить заявку</a>
 			</section>
-<!-- Отсутствуют еще два слайда -->
 		</section>
 
 		<section class="about-company">
@@ -260,15 +247,14 @@
 				</ul>
 				<a href="#">Подробнее о компании</a>
 			</div>
-<!--  Нужно разделить(обернуть в дивы) левую и правую части данного блока.-->
+
 			<div class="about-company-contacts">
 				<h2>Контакты</h2>
-	<!-- <h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3> и <h2>Контакты</h2> должны быть заголовками одинакового порядка или <h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3> должна быть более высокого порядка чем <h2>Контакты</h2> -->
 				<p>
 					Вы можете забрать товар сами,<br>
 					заехав в наш офис:
 				</p>
-				<a href="#"><img src="#" alt="Схема проезда"></a>
+				<a href="#"><img src="img/contacts_map.png" width="300" height="158" alt="Схема проезда"></a>
 				<a href="#">Заблудились? Напишите нам!</a>
 			</div>
 		</section>
@@ -277,13 +263,11 @@
 	<footer>
 		<div class="footer-contacts">
 			<a href="#" class="footer-logo">ТЕХНОМАРТ</a>
-	<!-- Логотип должен быть ссылкой -->
 			<p>
 				г.Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
 				+7 (812) 555-05-55			
 			</p>
 		</div>
-<!-- логотип, адрес, телефон рекомендую обернуть в блок для позиционирования -->
 		<ul class="footer-navigation">
 			<li><a href="#">Компания</a></li>
 			<li><a href="#">Новости</a></li>
@@ -308,13 +292,11 @@
 			<p class="feedback">
 				Обратная связь:<br>
 				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-<!-- Вот так. <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> -->
 			</p>
 
 			<p class="developer">
 				Разработано -<br>
 				<a href="htmlacademy.ru">htmlacademy.ru</a>
-<!-- Вот так. <a href="htmlacademy.ru">htmlacademy.ru</a> -->
 			</p>
 		</div>		
 	</footer>
