@@ -8,7 +8,9 @@
 	<header class="main-header">
 		<section class="header-menu">
 			<h1 class="header-logo">Техномарт</h1>
-			<!--Форма поиска-->
+			<form>
+				<label>Поиск<input type="search" name="search"></label>
+			</form>
 			<ul class="user-activities">
 				<li>Закладки: 0</li>
 				<li>Корзина: 0</li>
@@ -77,7 +79,7 @@
 						<b>Перфораторы</b><br>
 						Настоящие мужские игрушки
 					</p>
-					<a href="#">Открыть каталог</a>
+					<a href="catalog.html">Открыть каталог</a>
 				</div>
 
 			</div>
@@ -195,11 +197,11 @@
 				Хороший интернет-магазин отличается от плохого не только ценами!<br>
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 			</p>
-			<ul class="services-menu">
-				<li><label><input type="radio">Доставка</label></li>
-				<li><label><input type="radio">Гарантия</label></li>
-				<li><label><input type="radio">Кредит</label></li>
-			</ul>
+				<form>
+					<label><input type="radio" name="service">Доставка</label>
+					<label><input type="radio" name="service">Гарантия</label>
+					<label><input type="radio" name="service">Кредит</label>
+				</form>
 			<section class="delivery">
 				<h3 class="delivery-header">Доставка</h3>
 				<p>
@@ -254,9 +256,23 @@
 					Вы можете забрать товар сами,<br>
 					заехав в наш офис:
 				</p>
-				<a href="#"><img src="img/contacts_map.png" width="300" height="158" alt="Схема проезда"></a>
+				<a href="#"><img src="img/contacts_map.jpg" width="300" height="158" alt="Схема проезда"/></a>
 				<a href="#">Заблудились? Напишите нам!</a>
 			</div>
+		</section>
+		<section class="write-us visually-hidden">
+			<form>
+				<label>Ваше имя:
+					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label>Ваш e-mail:
+					<input type="email" name="e-mail" placeholder="Для отправки ответа">
+				</label>
+				<label>Текст письма:
+					<textarea name="message" placeholder="В свободной форме"></textarea>
+				</label>
+				<input type="submit" name="send" value="Отправить">
+			</form>
 		</section>
 	</main>
 
@@ -285,9 +301,9 @@
 				Все права защищены
 			</p>
 			<ul class="footer-social-links">
-				<li class="vkontakte"><a href="#"></a></li>
-				<li class="facebook"><a href="#"></a></li>
-				<li class="instagramm"><a href="#"></a></li>
+				<li class="vkontakte"><a href="#">ВКонтакте</a></li>
+				<li class="facebook"><a href="#">Фейсбук</a></li>
+				<li class="instagramm"><a href="#">Инстаграмм</a></li>
 			</ul>
 			<p class="feedback">
 				Обратная связь:<br>
@@ -296,7 +312,7 @@
 
 			<p class="developer">
 				Разработано -<br>
-				<a href="htmlacademy.ru">htmlacademy.ru</a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 		</div>		
 	</footer>

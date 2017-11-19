@@ -7,8 +7,10 @@
 <body>
 	<header class="main-header">
 		<section class="header-menu">
-			<h1 class="header-logo">Техномарт</h1>
-			<!--Форма поиска-->
+			<h1 class="header-logo"><a href="index.html">Техномарт</a></h1>
+			<form>
+				<label>Поиск<input type="search" name="search"></label>
+			</form>
 			<ul class="user-activities">
 				<li>Закладки: 0</li>
 				<li>Корзина: 0</li>
@@ -30,7 +32,7 @@
 
 			<section class="user-interface">
 				<ul>
-					<li class="user-name">Равшан Джамшутович</li>
+					<li class="user-name"><a href="#"> Равшан Джамшутович</a></li>
 					<li><a href="#">Мои заказы</a></li>
 					<li><a href="#">Личный кабинет</a></li>
 				</ul>			
@@ -58,6 +60,25 @@
 
 		</ul>
 		<h1>Перфораторы</h1>
+
+		<section class="search-filters">  <!--search form-->
+			<form>
+				<fieldset>
+					<legend>Производители:</legend>
+					<label><input type="checkbox" name="bosh">Bosh</label>
+					<label><input type="checkbox" name="interscol">Интерскол</label>
+					<label><input type="checkbox" name="makita">Makita</label>
+					<label><input type="checkbox" name="dewalt">Dewalt</label>
+					<label><input type="checkbox" name="hitachi">Hitachi</label>
+				</fieldset>
+				<fieldset>
+					<legend>Питание:</legend>
+					<label><input type="radio" name="battery">Аккумуляторные</label>
+					<label><input type="radio" name="battery">Сетевые</label>
+				</fieldset>
+				<input type="submit" name="submit-filters" value="Показать">
+			</form>
+		</section>
 
 		<section class="goods">
 			<span>Сортировка:</span>
@@ -177,6 +198,14 @@
 				ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 			</p>
 		</section>
+		<section class="cart">
+			<p>Товар добавлен в корзину!</p>
+			<ul class="cart-items">
+				<li><a href="#">Оформить заказ</a></li>
+				<li><a href="#">Продолжить покупки</a></li>
+			</ul>
+			
+		</section>
 
 	</main>
 	<footer>
@@ -215,9 +244,9 @@
 
 			<p class="developer">
 				Разработано -<br>
-				<a href="htmlacademy.ru">htmlacademy.ru</a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
-		</div>		
+		</div>	
 	</footer>
 </body>
 </html>
