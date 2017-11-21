@@ -3,6 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>Перфораторы</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">  <!--Подключили шрифты-->
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -12,9 +16,9 @@
 				<label>Поиск<input type="search" name="search"></label>
 			</form>
 			<ul class="user-activities">
-				<li>Закладки: 0</li>
-				<li>Корзина: 0</li>
-				<li><a href="#">Оформить заказ</a></li>	
+				<li class="bookmarks"><a href="#">Закладки: 0</a></li>
+				<li class="basket"><a href="#">Корзина: 0</a></li>
+				<li class="order"><a href="#">Оформить заказ</a></li>	
 			</ul>
 			
 		</section>
@@ -33,8 +37,8 @@
 			<section class="user-interface">
 				<ul>
 					<li class="user-name"><a href="#"> Равшан Джамшутович</a></li>
-					<li><a href="#">Мои заказы</a></li>
-					<li><a href="#">Личный кабинет</a></li>
+					<li class="my-orders"><a href="#">Мои заказы</a></li>
+					<li class="my-cabinet"><a href="#">Личный кабинет</a></li>
 				</ul>			
 			</section>
 		</div>
@@ -63,7 +67,13 @@
 
 		<section class="search-filters">  <!--search form-->
 			<form>
-				<fieldset>
+				<span>Фильтр:</span>
+				<fieldset class="filters-price">
+					<legend>Цена:</legend>
+					<input type="range" name="price" min="0" max="30000">
+					<p><output>0</output>-<output>30000</output></p>
+				</fieldset>
+				<fieldset class="filters-manufacturers">
 					<legend>Производители:</legend>
 					<label><input type="checkbox" name="bosh">Bosh</label>
 					<label><input type="checkbox" name="interscol">Интерскол</label>
@@ -71,7 +81,7 @@
 					<label><input type="checkbox" name="dewalt">Dewalt</label>
 					<label><input type="checkbox" name="hitachi">Hitachi</label>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filters-supply">
 					<legend>Питание:</legend>
 					<label><input type="radio" name="battery">Аккумуляторные</label>
 					<label><input type="radio" name="battery">Сетевые</label>
@@ -81,12 +91,12 @@
 		</section>
 
 		<section class="goods">
-			<span>Сортировка:</span>
-			<ul class="sorting-options">		
-				<li><a href="#">По цене</a></li>
+			<ul class="sorting-options">
+				<li>Сортировка:</li>		
+				<li><a class="active" href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По функционалу</a></li>
-				<li class="up"><a href="#">По возрастанию</a></li>
+				<li class="up"><a class="active" href="#">По возрастанию</a></li>
 				<li class="down"><a href="#">По убыванию</a></li>
 			</ul>
 			<ul class="goods-list">

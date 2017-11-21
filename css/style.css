@@ -1,0 +1,590 @@
+body {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+	background-color: #f3f7f9;
+}
+
+/* стилизация верхнего логотипа */
+
+h1.header-logo,
+h1.header-logo a {
+	background-color: #ee3643;
+	font-size: 24px;
+	color: white;
+}
+
+h1.header-logo:hover,
+h1.header-logo a:hover {
+	background-color: #ca2c37;
+}
+
+h1.header-logo:active,
+h1.header-logo a:active {
+	background-color: #ba2732;
+}
+
+/* стилизация верхнего логотипа */
+
+/* стилизация кнопок верхнего меню */
+
+.order a {
+	color: white;
+	background-color: #63a63e;
+}
+
+.order a:hover {
+	background-color: #5fbb2d;
+}
+
+.order a:active {
+	background-color: #518534;
+	color: white;
+}
+
+.basket a,
+.bookmarks a {
+	color: white;
+}
+
+.basket a:hover,
+.bookmarks a:hover {
+	background-color: #212a3a;
+}
+
+.basket a:active,
+.bookmarks a:active {
+	background-color: #161d29;
+}
+
+.header-menu label {
+	background-color: #293449;
+}
+
+.header-menu label:hover {
+	background-color: #212a3a;
+}
+
+.user-interface a {
+	font-size: 21px;
+	color: black;
+	background-color: white;
+}
+
+.user-interface a:hover {
+	color: #ee3643;
+}
+
+.user-interface a:active {
+	color: #c5c5c5;
+}
+
+.main-menu  a {
+	color: white;
+}
+
+.main-menu  a:hover {
+	background-color: #293449;
+}
+
+.main-menu  a:active {
+	color: #a8abaf;
+	background-color: #1d2739;
+}
+
+
+.user-name {
+	background-color: white;
+}
+
+.user-name a:hover {
+	color: black;
+}
+
+.user-name a:active {
+	color: #c5c5c5;
+}
+
+.my-orders a,
+.my-cabinet a {
+	font-size: 16px;
+	text-decoration: underline;
+	color: #32425c;
+}
+
+/* стилизация кнопок верхнего меню */
+
+
+
+/* хлебные крошки */
+
+.breadcrumbs a {
+	font-size: 13px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+/* хлебные крошки */
+
+main h1 {
+	font-size: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+	background-color: #f2f6f8;
+}
+
+.header-menu {
+	background-color: #293449;
+	font-size: 17px;
+}
+
+.slogan {
+	font-style: italic;
+	font-size: 16px;
+	color: #ee3643;
+}
+
+.contacts {
+	font-size: 14px;
+	color: #32425c;
+}
+
+.header-phone {
+	font-size: 21px;
+	color: #ee3643;
+}
+
+.main-menu {
+	background-color: #32425c;
+	font-size: 17px;
+}
+
+
+
+.promo h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+
+.promo a {
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase; 
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo a:active {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+.promo-top div:nth-child(1) {
+	background-image: url(img/promo_matherials.svg);
+	background-color: #ffbf47;
+
+}
+
+.promo-top div:nth-child(2) {
+	background-image: url(img/promo_tools.svg);
+	background-color: #3bbce3;
+}
+
+.promo-top div:nth-child(3) {
+	background-image: url(img/promo_technics.svg);
+	background-color: #dc91d8;
+}
+
+.promo-bottom div:nth-child(1) {
+	background-image: url(img/promo_discount.svg);
+	background-color: #8ed78f;
+}
+
+.promo-bottom div:nth-child(2) {
+	background-image: url(img/promo_delivery.svg);
+	background-color: #ffc047;
+}
+
+.promo-slider {
+    background-color: #75777a;
+    background-image: url(img/slider_1.jpg);
+}
+
+/* кнопка слайдера */
+
+.promo-slider a {
+	color: white;
+	background-color: #ee3643;
+	font-size: 14px;
+}
+
+.promo-slider a:hover {
+	background-color: #ca2c37;
+}
+
+.promo-slider a:active {
+	background-color: #ba2732;
+}
+
+/* кнопка слайдера */
+
+/* стилизация форм с фильтрами */
+
+.search-filters span {
+	font-size: 13px;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #f7f3ec;
+	text-transform: uppercase;
+}
+
+.filters-price p {
+	font-size: 16px;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.filters-price output {
+	font-size: 17px;
+	background-color: #f7f3ec;
+}
+
+.filters-price input {
+	background-color: #f7f3ec;
+}
+
+.sorting-options,
+.sorting-options li,
+.sorting-options a {
+	color: black;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+	font-size: 13px;
+}
+
+.sorting-options a {
+	color: #999999;
+}
+
+.sorting-options a:hover {
+	color: black;
+}
+
+.sorting-options a.active {
+	color: #ee3643;
+}
+
+
+.search-filters legend {
+	font-size: 17px;
+	font-weight: 700;
+	color: black;
+	text-transform: uppercase;
+}
+
+.filters-manufacturers label {
+	font-size: 15px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.filters-supply label {
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.search-filters input[type="submit"] {
+	font-size: 13px;
+	color: black;
+	text-transform: uppercase;
+}
+/* стилизация форм с фильтрами */
+
+
+
+/* кнопки карточки товара */
+
+.item-links a {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.item-links a:first-child {
+	background-color: #63a63e;
+}
+
+.item-links a:first-child:hover {
+	background-color: #5fbb2d;
+}
+
+.item-links a:first-child:active {
+	background-color: #518534;
+}
+
+.item-links a:last-child {
+	color: #32425c;
+	background-color: white;
+}
+
+.item-links a:last-child:hover {
+
+}
+
+.item-links a:last-child:active {
+	color: #c1c6ce;
+}
+
+/* кнопки карточки товара */
+
+
+/* пагинация */
+
+.pagination-list a {
+	font-size: 13px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.pagination-list a:hover {
+	
+}
+
+.pagination-list a:active {
+	
+}
+
+.current-page {
+	color: white;
+	background-color: #ee3643;
+}
+
+/* пагинация */
+
+.goods-description h2 {
+	font-size: 30px;
+	font-weight: 400;
+	color: black;
+	text-transform: uppercase;
+}
+
+.goods-description p {
+	font-size: 13px;
+	color: black;
+	line-height: 24px;
+	font-family: 'PT Sans', sans-serif; 
+}
+
+
+.slider-header b {
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase; 
+}
+
+.slider-header {
+	font-family: 'PT Sans', sans-serif; 
+	font-size: 18px;
+}
+
+.popular {
+	background-color: #f9f5f0;
+	text-transform: uppercase;
+}
+
+.popular h2 {
+	font-size: 30px;
+	color: #32425c;
+	
+}
+
+.popular a {
+	color: white;
+	font-size: 14px;
+	background-color: #ee3643;
+}
+
+.popular-items h3,
+.goods-list h3 {
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.old-price {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: #999999;
+}
+
+.new-price {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: white;
+	background-color: #ee3643;
+}
+
+.services {
+	background-color: #f4f8f9;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.services p,
+.about-company p {
+	font-family: 'PT Sans', sans-serif;
+	color: black;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.services h2,
+.about-company h2 {
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: black;
+	text-transform: uppercase;
+}
+
+.services h3 {
+	font-size: 36px;
+	font-family: 'Cuprum', Arial, sans-serif;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.credit a {
+	color: white;
+	background-color: #ff5357;
+	text-transform: uppercase;
+}
+
+.delivery {
+	background-image: url(img/delivery.png);
+}
+
+.guarantee {
+	background-image: url(img/guarantee.png);
+}
+
+.credit {
+	background-image: url(img/credit.png);
+}
+
+
+
+/* стилизация кнопок сервиса*/
+
+.services label {
+	font-size: 21px;
+	font-weight: 700;
+	color: white;
+	background-color: #32425c;
+}
+
+.services label:hover {
+	background-color: #293449;
+}
+
+.services label.active {
+	color: #32425c;
+	background-color: white;
+}
+
+/* стилизация кнопок сервиса*/
+
+
+
+.about-company a {
+	color: white;
+	font-size: 14px;
+	background-color: #ee3643;
+	text-transform: uppercase;
+}
+
+.about-company-info li {
+	font-size: 18px;
+	color: black;
+}
+
+/* стилизация футера */
+
+footer {
+	background-color: #32425c;
+}
+
+.footer-logo {
+	font-size: 30px;
+	background-color: #ee3643;
+	color: white;
+}
+
+.footer-links {
+	background-color: #293449;
+}
+
+.footer-contacts p {
+	font-size: 18px;    
+}
+
+.footer-navigation a {
+	font-size: 18px;
+	color: inherit;
+}
+
+.footer-navigation a:hover {
+	text-decoration: underline;
+}
+
+.footer-navigation a:active {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.footer-navigation li:nth-of-type(n+6) {
+	color: #ffd180;
+}
+
+.footer-links {
+	font-size: 16px;
+}
+
+.footer-links  a {
+	color: #ffd180;
+}
+
+.footer-links  a:hover {
+	text-decoration: underline;
+}
+
+.footer-links  a:active {
+	text-decoration: none;
+	color: #ee3643;
+}
+
+/* стилизация футера */
