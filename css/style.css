@@ -35,6 +35,10 @@ h1.header-logo a:active {
 
 /* стилизация кнопок верхнего меню */
 
+.user-activities {
+	list-style: none;
+}
+
 .order a {
 	color: white;
 	background-color: #63a63e;
@@ -84,6 +88,10 @@ h1.header-logo a:active {
 
 .user-interface a:active {
 	color: #c5c5c5;
+}
+
+.main-menu {
+	list-style: none;
 }
 
 .main-menu  a {
@@ -199,35 +207,41 @@ main h1 {
 
 
 
-.promo-top div:nth-child(1) {
-	background-image: url(img/promo_matherials.svg);
+.promo-item--matherials {
+	background-image: url(../img/promo_matherials.svg);
+	background-repeat: no-repeat;
 	background-color: #ffbf47;
 
 }
 
-.promo-top div:nth-child(2) {
-	background-image: url(img/promo_tools.svg);
+.promo-item--tools {
+	background-image: url(../img/promo_tools.svg);
+	background-repeat: no-repeat;
 	background-color: #3bbce3;
 }
 
-.promo-top div:nth-child(3) {
-	background-image: url(img/promo_technics.svg);
+.promo-item--technics {
+	background-image: url(../img/promo_technics.svg);
+	background-repeat: no-repeat;
 	background-color: #dc91d8;
 }
 
-.promo-bottom div:nth-child(1) {
-	background-image: url(img/promo_discount.svg);
+.promo-item--discount {
+	background-image: url(../img/promo_discount.svg);
+	background-repeat: no-repeat;
 	background-color: #8ed78f;
 }
 
-.promo-bottom div:nth-child(2) {
-	background-image: url(img/promo_delivery.svg);
+.promo-item--delivery {
+	background-image: url(../img/promo_delivery.svg);
+	background-repeat: no-repeat;
 	background-color: #ffc047;
 }
 
 .promo-slider {
     background-color: #75777a;
-    background-image: url(img/slider_1.jpg);
+    background-image: url(../img/slider_1.jpg);
+    background-repeat: no-repeat;
 }
 
 /* кнопка слайдера */
@@ -485,15 +499,18 @@ main h1 {
 }
 
 .delivery {
-	background-image: url(img/delivery.png);
+	background-image: url(../img/delivery.png);
+	background-repeat: no-repeat;
 }
 
 .guarantee {
-	background-image: url(img/guarantee.png);
+	background-image: url(../img/guarantee.png);
+	background-repeat: no-repeat;
 }
 
 .credit {
-	background-image: url(img/credit.png);
+	background-image: url(../img/credit.png);
+	background-repeat: no-repeat;
 }
 
 
@@ -552,6 +569,10 @@ footer {
 	font-size: 18px;    
 }
 
+.footer-navigation {
+	list-style: none;
+}
+
 .footer-navigation a {
 	font-size: 18px;
 	color: inherit;
@@ -568,6 +589,10 @@ footer {
 
 .footer-navigation li:nth-of-type(n+6) {
 	color: #ffd180;
+}
+
+.footer-social-links {
+	list-style: none;
 }
 
 .footer-links {
