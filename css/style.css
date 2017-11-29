@@ -1,15 +1,79 @@
 body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+
+
 .main-header {
 	background-color: #f3f7f9;
+	margin-bottom: 59px;
+}
+
+.main-header-top {
+	background-color: #293449;
+}
+
+section.header-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #293449;
+	font-size: 17px;
+	line-height: 18px;
+	width: 940px;
+	height: 42px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.user-activities li {
+	display: inline-block;
+}
+
+.header-info {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-header-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.index {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.user-interface ul {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+}
+
+.user-name {
+	flex-basis: 300px;
 }
 
 /* стилизация верхнего логотипа */
@@ -18,6 +82,7 @@ h1.header-logo,
 h1.header-logo a {
 	background-color: #ee3643;
 	font-size: 24px;
+	line-height: 24px;
 	color: white;
 }
 
@@ -78,6 +143,7 @@ h1.header-logo a:active {
 
 .user-interface a {
 	font-size: 21px;
+	line-height: 18px;
 	color: black;
 	background-color: white;
 }
@@ -92,6 +158,10 @@ h1.header-logo a:active {
 
 .main-menu {
 	list-style: none;
+}
+
+.main-menu  li {
+	display: inline-block;
 }
 
 .main-menu  a {
@@ -123,11 +193,98 @@ h1.header-logo a:active {
 .my-orders a,
 .my-cabinet a {
 	font-size: 16px;
+	line-height: 18px;
 	text-decoration: underline;
 	color: #32425c;
 }
 
 /* стилизация кнопок верхнего меню */
+
+main > h1 {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.catalog-content-wrapper {
+	display: flex;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+section.search-filters{
+	margin-right: 20px;
+}
+
+section.search-filters form {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	margin: 0;
+	padding: 0;
+}
+
+section.goods {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+}
+
+.sorting-options {
+	display: flex;
+	width: 700px;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+
+}
+
+.goods-list {
+	display: flex;
+	width: 700px;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.pagination-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+
+.goods-description {
+	background-color: #f2f6f8;
+	min-height: 261px;
+}
+
+.goods-description-wrapper {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cart {
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	width: 620px;
+	height: 349px;
+	background-color: white;
+	color: black;
+	bottom: 500px;
+}
+
+.cart-items {
+	display: flex;
+	height: 112px;
+	background-color: #f1f1f1;
+}
 
 
 
@@ -135,6 +292,7 @@ h1.header-logo a:active {
 
 .breadcrumbs a {
 	font-size: 13px;
+	line-height: 18px;
 	color: black;
 	text-transform: uppercase;
 	font-family: 'PT Sans', sans-serif;
@@ -145,41 +303,65 @@ h1.header-logo a:active {
 
 main h1 {
 	font-size: 30px;
+	line-height: 30px;
 	color: #32425c;
 	text-transform: uppercase;
 	background-color: #f2f6f8;
 }
 
-.header-menu {
-	background-color: #293449;
-	font-size: 17px;
-}
+
 
 .slogan {
 	font-style: italic;
 	font-size: 16px;
+	line-height: 23px;
 	color: #ee3643;
 }
 
 .contacts {
 	font-size: 14px;
+	line-height: 24px;
 	color: #32425c;
 }
 
 .header-phone {
 	font-size: 21px;
+	line-height: 18px;
 	color: #ee3643;
 }
 
 .main-menu {
 	background-color: #32425c;
 	font-size: 17px;
+	line-height: 17px;
 }
 
 
+.promo {
+	width: 940px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-between;
+	margin-bottom: 53px;
+}
+
+.promo-left {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.promo-right {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
 
 .promo h3 {
 	font-size: 24px;
+	line-height: 30px;
 	font-weight: 700;
 }
 
@@ -187,6 +369,7 @@ main h1 {
 .promo a {
 	color: white;
 	font-size: 14px;
+	line-height: 18px;
 	text-transform: uppercase; 
 	background-color: rgba(0, 0, 0, 0.2);
 }
@@ -205,12 +388,17 @@ main h1 {
 
 
 
-
+.promo-item {
+	width: 300px;
+	height: 123px;
+}
 
 .promo-item--matherials {
 	background-image: url(../img/promo_matherials.svg);
 	background-repeat: no-repeat;
 	background-color: #ffbf47;
+	margin-right: 20px;
+	margin-bottom: 20px; 
 
 }
 
@@ -218,18 +406,22 @@ main h1 {
 	background-image: url(../img/promo_tools.svg);
 	background-repeat: no-repeat;
 	background-color: #3bbce3;
+	margin-bottom: 20px;
+
 }
 
 .promo-item--technics {
 	background-image: url(../img/promo_technics.svg);
 	background-repeat: no-repeat;
 	background-color: #dc91d8;
+	margin-bottom: 20px;
 }
 
 .promo-item--discount {
 	background-image: url(../img/promo_discount.svg);
 	background-repeat: no-repeat;
 	background-color: #8ed78f;
+	margin-bottom: 20px;
 }
 
 .promo-item--delivery {
@@ -239,6 +431,8 @@ main h1 {
 }
 
 .promo-slider {
+	width: 620px;
+	height: 266px;
     background-color: #75777a;
     background-image: url(../img/slider_1.jpg);
     background-repeat: no-repeat;
@@ -250,6 +444,7 @@ main h1 {
 	color: white;
 	background-color: #ee3643;
 	font-size: 14px;
+	line-height: 18px;
 }
 
 .promo-slider a:hover {
@@ -262,10 +457,17 @@ main h1 {
 
 /* кнопка слайдера */
 
+
+
+
+
+
+
 /* стилизация форм с фильтрами */
 
 .search-filters span {
 	font-size: 13px;
+	line-height: 18px;
 	color: black;
 	font-family: 'PT Sans', sans-serif;
 	background-color: #f7f3ec;
@@ -274,12 +476,14 @@ main h1 {
 
 .filters-price p {
 	font-size: 16px;
+	line-height: 18px;
 	color: black;
 	font-family: 'PT Sans', sans-serif;
 }
 
 .filters-price output {
 	font-size: 17px;
+	line-height: 18px;
 	background-color: #f7f3ec;
 }
 
@@ -294,6 +498,7 @@ main h1 {
 	text-transform: uppercase;
 	background-color: #f7f3ec;
 	font-size: 13px;
+	line-height: 18px;
 }
 
 .sorting-options a {
@@ -311,6 +516,7 @@ main h1 {
 
 .search-filters legend {
 	font-size: 17px;
+	line-height: 30px;
 	font-weight: 700;
 	color: black;
 	text-transform: uppercase;
@@ -318,18 +524,21 @@ main h1 {
 
 .filters-manufacturers label {
 	font-size: 15px;
+	line-height: 20px;
 	color: black;
 	text-transform: uppercase;
 }
 
 .filters-supply label {
 	font-size: 14px;
+	line-height: 20px;
 	color: black;
 	text-transform: uppercase;
 }
 
 .search-filters input[type="submit"] {
 	font-size: 13px;
+	line-height: 18px;
 	color: black;
 	text-transform: uppercase;
 }
@@ -341,6 +550,7 @@ main h1 {
 
 .item-links a {
 	font-size: 14px;
+	line-height: 18px;
 	text-transform: uppercase;
 	color: white;
 }
@@ -373,10 +583,24 @@ main h1 {
 /* кнопки карточки товара */
 
 
+/* Хлебные крошки */
+
+.breadcrumbs {
+	display: flex;
+	width: 940px;
+	justify-content: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+}
+
+/* Хлебные крошки */
+
 /* пагинация */
 
 .pagination-list a {
 	font-size: 13px;
+	line-height: 18px;
 	color: black;
 	text-transform: uppercase;
 }
@@ -398,6 +622,7 @@ main h1 {
 
 .goods-description h2 {
 	font-size: 30px;
+	line-height: 24px;
 	font-weight: 400;
 	color: black;
 	text-transform: uppercase;
@@ -405,8 +630,8 @@ main h1 {
 
 .goods-description p {
 	font-size: 13px;
-	color: black;
 	line-height: 24px;
+	color: black;
 	font-family: 'PT Sans', sans-serif; 
 }
 
@@ -414,6 +639,7 @@ main h1 {
 .slider-header b {
 	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 36px;
+	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase; 
 }
@@ -421,15 +647,21 @@ main h1 {
 .slider-header {
 	font-family: 'PT Sans', sans-serif; 
 	font-size: 18px;
+	line-height: 24px;
 }
 
 .popular {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #f9f5f0;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .popular h2 {
 	font-size: 30px;
+	line-height: 30px;
 	color: #32425c;
 	
 }
@@ -437,6 +669,7 @@ main h1 {
 .popular a {
 	color: white;
 	font-size: 14px;
+	line-height: 18px;
 	background-color: #ee3643;
 }
 
@@ -445,12 +678,14 @@ main h1 {
 	color: black;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
+	line-height: 20px;
 	font-weight: 700;
 }
 
 .old-price {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
+	line-height: 18px;
 	font-weight: 700;
 	color: #999999;
 }
@@ -458,6 +693,7 @@ main h1 {
 .new-price {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
+	line-height: 18px;
 	font-weight: 700;
 	color: white;
 	background-color: #ee3643;
@@ -467,6 +703,47 @@ main h1 {
 	background-color: #f4f8f9;
 	font-family: 'PT Sans', sans-serif;
 }
+
+.services-wrapper {
+	width: 940px;
+	min-height: 522px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.services-wrapper-inner {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.services form {
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+
+.about-company {
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 86px;
+}
+
+.about-company-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-company-contacts {
+	display: flex;
+	flex-direction: column;
+}
+
 
 .services p,
 .about-company p {
@@ -479,6 +756,7 @@ main h1 {
 .services h2,
 .about-company h2 {
 	font-size: 30px;
+	line-height: 24px;
 	font-weight: 400;
 	font-family: 'Cuprum', Arial, sans-serif;
 	color: black;
@@ -487,6 +765,7 @@ main h1 {
 
 .services h3 {
 	font-size: 36px;
+	line-height: 24px;
 	font-family: 'Cuprum', Arial, sans-serif;
 	color: #32425c;
 	text-transform: uppercase;
@@ -519,6 +798,7 @@ main h1 {
 
 .services label {
 	font-size: 21px;
+	line-height: 30px;
 	font-weight: 700;
 	color: white;
 	background-color: #32425c;
@@ -540,23 +820,55 @@ main h1 {
 .about-company a {
 	color: white;
 	font-size: 14px;
+	line-height: 18px;
 	background-color: #ee3643;
 	text-transform: uppercase;
 }
 
 .about-company-info li {
 	font-size: 18px;
+	line-height: 20px;
 	color: black;
 }
 
+
+
+
 /* стилизация футера */
 
-footer {
+.main-footer {
 	background-color: #32425c;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+.footer-links-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main-footer-wrapper {
+	display: flex;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-navigation {
+	display: flex;
+}
+
+.footer-social-links {
+	display: flex;
+}
+
 
 .footer-logo {
 	font-size: 30px;
+	line-height: 30px;
 	background-color: #ee3643;
 	color: white;
 }
@@ -566,7 +878,8 @@ footer {
 }
 
 .footer-contacts p {
-	font-size: 18px;    
+	font-size: 18px;
+	line-height: 24px;    
 }
 
 .footer-navigation {
@@ -575,6 +888,7 @@ footer {
 
 .footer-navigation a {
 	font-size: 18px;
+	line-height: 24px;
 	color: inherit;
 }
 
@@ -597,6 +911,7 @@ footer {
 
 .footer-links {
 	font-size: 16px;
+	line-height: 18px;
 }
 
 .footer-links  a {
@@ -613,3 +928,69 @@ footer {
 }
 
 /* стилизация футера */
+
+
+
+.popular-items {
+	width: 940px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+}
+
+.popular-items-slider {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+
+.popular-items-slider li {
+	width: 220px;
+	min-height: 318px;
+}
+
+.popular-manufacturers {
+	width: 940px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	margin-bottom: 85px;
+}
+
+.popular-manufacturers-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+.popular-manufacturers-list li {
+	width: 220px;
+	min-height: 145px;
+}
+
+
+section.write-us {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 400px;
+	color: black;
+	background: white;
+}
+
+
+
+.write-us form {
+	display: flex;
+	flex-direction: column;
+}
+
+
