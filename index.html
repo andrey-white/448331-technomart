@@ -96,41 +96,41 @@
 				<a href="#">Все популярные товары</a>
 			</div>
 			<ul class="popular-items-slider">
-				<li>
-					<img src="img/bfg_9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
+				<li class="goods-list-item">
+					<img src="img/bfg_9000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 9000">
 					<p class="item-links">
-						<a href="#">Купить</a>
-						<a href="#">В закладки</a>
+						<a class="button-buy" href="#">Купить</a>
+						<a class="button-bookmark" href="#">В закладки</a>
 					</p>
 					<h3> Перфоратор BOSH BFG 9000</h3>
 					<span class="old-price"><del>32500 Р.</del></span>
 					<span class="new-price">25500 Р.</span>
 				</li>
-				<li>
-					<img src="img/bfg_3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
+				<li class="goods-list-item">
+					<img src="img/bfg_3000.jpg" width="216" height="123" alt="Перфоратор BOSH BFG 3000">
 					<p class="item-links">
-						<a href="#">Купить</a>
-						<a href="#">В закладки</a>
+						<a class="button-buy" href="#">Купить</a>
+						<a class="button-bookmark" href="#">В закладки</a>
 					</p>
 					<h3> Перфоратор BOSH BFG 3000</h3>
 					<span class="old-price"><del>22500 Р.</del></span>
 					<span class="new-price">15500 Р.</span>
 				</li>
-				<li>
-					<img src="img/bfg_6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+				<li class="goods-list-item">
+					<img src="img/bfg_6000.jpg" width="216" height="123" alt="Перфоратор BOSH BFG 6000">
 					<p class="item-links">
-						<a href="#">Купить</a>
-						<a href="#">В закладки</a>
+						<a class="button-buy" href="#">Купить</a>
+						<a class="button-bookmark" href="#">В закладки</a>
 					</p>
 					<h3> Перфоратор BOSH BFG 6000</h3>
 					<span class="old-price"><del>30500 Р.</del></span>
 					<span class="new-price">25500 Р.</span>
 				</li>
-				<li>
-					<img src="img/bfg_2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
+				<li class="goods-list-item">
+					<img src="img/bfg_2000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 2000">
 					<p class="item-links">
-						<a href="#">Купить</a>
-						<a href="#">В закладки</a>
+						<a class="button-buy" href="#">Купить</a>
+						<a class="button-bookmark" href="#">В закладки</a>
 					</p>
 					<h3> Перфоратор BOSH BFG 2000</h3>
 					<span class="old-price-hidden"><del>25500</del></span>
@@ -204,38 +204,39 @@
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 				</p>
 				<div class="services-wrapper-inner">
-				<form>
-					<label><input type="radio" name="service">Доставка</label>
-					<label><input type="radio" name="service">Гарантия</label>
-					<label><input type="radio" name="service">Кредит</label>
-				</form>
-				<section class="delivery">
-					<h3 class="delivery-header">Доставка</h3>
-					<p>
-						Мы с удовольствием доставим ваш товар прямо<br>
-						к вашему подъезду совершенно бесплатно!<br>
-						Ведь мы неплохо заработаем,<br>
-						поднимая его на ваш этаж!
-					</p>
-				</section>
-				<section class="guarantee">
-					<h3 class="guarantee-header">Гарантия</h3>
-					<p>
-						Если купленный у нас товар поломается или заискрит,<br>
-						а также в случае пожара, спровоцированного его возгоранием,<br>
-						вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
-						сгоревший товар на новый.<br>
-						Дом уж восстановите как-нибудь сами.
-					</p>
-				</section>
-				<section class="credit">
-					<h3 class="credit-header">Кредит</h3>
-					<p>
-						Залезть в долговую яму стало проще!<br>
-						Кредитные консультынты придут вам на помощь.
-					</p>
-					<a href="#" class="credit-request">Отправить заявку</a>
-				</section>
+					<form>
+						<label class="active"><input id="delivery-check" type="radio" name="service" checked>Доставка</label>
+						<label><input id="guarantee-check" type="radio" name="service">Гарантия</label>
+						<label><input id="cred" type="radio" name="service">Кредит</label>
+					</form>
+					<section class="delivery">
+						<h3 class="delivery-header">Доставка</h3>
+						<p>
+							Мы с удовольствием доставим ваш товар прямо<br>
+							к вашему подъезду совершенно бесплатно!<br>
+							Ведь мы неплохо заработаем,<br>
+							поднимая его на ваш этаж!
+						</p>
+					</section>
+					<section class="guarantee">
+						<h3 class="guarantee-header">Гарантия</h3>
+						<p>
+							Если купленный у нас товар поломается или заискрит,<br>
+							а также в случае пожара, спровоцированного его возгоранием,<br>
+							вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+							сгоревший товар на новый.<br>
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</section>
+					<section class="credit">
+						<h3 class="credit-header">Кредит</h3>
+						<p>
+							Залезть в долговую яму стало проще!<br>
+							Кредитные консультынты придут вам на помощь.
+						</p>
+						<a href="#" class="credit-request">Отправить заявку</a>
+					</section>
+				</div>
 			</div>
 		</section>
 
@@ -293,29 +294,33 @@
 					+7 (812) 555-05-55			
 				</p>
 			</div>
-			<ul class="footer-navigation">
-				<li><a href="#">Компания</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
-				<li><a href="#">Материалы</a></li>
-				<li><a href="#">Техника</a></li>
-				<li><a href="#">Инструмент</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-			</ul>
+			<div>
+				<ul class="footer-navigation">
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="footer-navigation-bottom">
+					<li><a href="#">Материалы</a></li>
+					<li><a href="#">Техника</a></li>
+					<li><a href="#">Инструмент</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="footer-links">
 			<div class="footer-links-wrapper">
 			<p class="copyrights">
-				2010-2017 Компания "Техномарт"<br>
+				&copy; 2010-2017 Компания "Техномарт"<br>
 				Все права защищены
 			</p>
 			<ul class="footer-social-links">
-				<li class="vkontakte"><a href="#">ВКонтакте</a></li>
-				<li class="facebook"><a href="#">Фейсбук</a></li>
-				<li class="instagramm"><a href="#">Инстаграмм</a></li>
+				<li><a class="vkontakte" href="#">ВКонтакте</a></li>
+				<li><a class="facebook" href="#">Фейсбук</a></li>
+				<li><a class="instagramm" href="#">Инстаграмм</a></li>
 			</ul>
 			<p class="feedback">
 				Обратная связь:<br>
