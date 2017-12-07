@@ -12,15 +12,16 @@
 	<header class="main-header">
 		<div class="main-header-top">
 			<section class="header-menu">
-				<h1 class="header-logo">Техномарт</h1>
+				<h1 class="header-logo"><a href="index.html">Техномарт</a></h1>
 				<form>
-					<label>Поиск<input type="search" name="search"></label>
+					<label class="visually-hidden" for="search">Поиск</label>
+					<input type="search" name="search" id="search" value="Поиск:">
 				</form>
 				<ul class="user-activities">
 					<li class="bookmarks"><a href="#">Закладки: 0</a></li>
 					<li class="basket"><a href="#">Корзина: 0</a></li>
 					<li class="order"><a href="#">Оформить заказ</a></li>	
-				</ul>	
+				</ul>		
 			</section>
 		</div>
 
@@ -44,9 +45,9 @@
 
 			<nav class="main-header-menu">
 				<ul class="main-menu">
-					<li><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Компания</a></li>
-					<li><a href="#">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -58,7 +59,7 @@
 	<main class="index">
 		<section class="promo">
 			<div class="promo-left">
-				<div class="promo-item promo-item--matherials"> 
+				<div class="promo-item promo-item--matherials new"> 
 					<h3>Материалы</h3>
 					<a href="#">На любой вкус</a>
 				</div>
@@ -72,6 +73,10 @@
 						Настоящие мужские игрушки
 					</p>
 					<a href="catalog.html">Открыть каталог</a>
+					<button class="left-slide"><span>Предыдущий слайдер</span></button>
+					<button class="right-slide"><span>Следующий слайдер</span></button>
+					<button class="left-slide-radio"><span class="promo-slider-active-radio"></span></button>
+					<button class="right-slide-radio"><span></span></button>
 				</div>
 			</div>
 			<div class="promo-right">
@@ -126,7 +131,7 @@
 					<span class="old-price"><del>30500 Р.</del></span>
 					<span class="new-price">25500 Р.</span>
 				</li>
-				<li class="goods-list-item">
+				<li class="goods-list-item new">
 					<img src="img/bfg_2000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 2000">
 					<p class="item-links">
 						<a class="button-buy" href="#">Купить</a>
