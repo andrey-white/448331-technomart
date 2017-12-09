@@ -15,7 +15,7 @@
 				<h1 class="header-logo"><a href="index.html">Техномарт</a></h1>
 				<form>
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input type="search" name="search" id="search" value="Поиск:">
+					<input type="search" name="search" id="search" placeholder="Поиск:">
 				</form>
 				<ul class="user-activities">
 					<li class="bookmarks"><a href="#">Закладки: 0</a></li>
@@ -32,7 +32,7 @@
 					и инструментов для ремонта
 				</p>
 				<p class="contacts">
-					<span class="header-phone">+7 (812) 555-05-55</span><br>
+					<span class="header-phone">+7 (812) 555-05-55</span>
 					г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8		
 				</p>
 				<section class="user-interface">
@@ -274,20 +274,6 @@
 				<a href="#">Заблудились? Напишите нам!</a>
 			</div>
 		</section>
-		<section class="write-us">
-			<form>
-				<label>Ваше имя:
-					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-				</label>
-				<label>Ваш e-mail:
-					<input type="email" name="e-mail" placeholder="Для отправки ответа">
-				</label>
-				<label>Текст письма:
-					<textarea name="message" placeholder="В свободной форме"></textarea>
-				</label>
-				<input type="submit" name="send" value="Отправить">
-			</form>
-		</section>
 	</main>
 
 	<footer class="main-footer">
@@ -339,5 +325,23 @@
 			</div>
 		</div>		
 	</footer>
+	<section class="write-us">
+			<form>
+				<div class="inputs-wrapper">
+					<p>
+					<label for="first-name">Ваше имя:</label>
+					<input type="text" name="name" id="first-name" placeholder="Представьтесь, пожалуйста">
+					</p>
+					<p>
+					<label for="contact-email">Ваш e-mail:</label>
+					<input type="email" name="e-mail" id="contact-email" placeholder="Для отправки ответа">
+					</p>
+				</div>
+				<label for="message-text">Текст письма:</label>
+				<textarea name="message"  id="message-text" placeholder="В свободной форме"></textarea>
+								
+				<input type="submit" name="send" value="Отправить">
+			</form>
+	</section>
 </body>
 </html>
