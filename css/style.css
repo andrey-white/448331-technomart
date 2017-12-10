@@ -1655,10 +1655,23 @@ a.previous-page {
 
 
 .services form {
+	position: relative;
 	display: flex;
+	flex-wrap: nowrap;
 	flex-direction: column;
 }
 
+.services form::after {
+	content: "";
+	position: absolute;
+	right: 0px;
+    top: -11px;
+	width: 30px;
+	height: 350px;
+	background-image: url(../img/services-shadow.png);
+    background-repeat: no-repeat;
+    background-position: 100% -33px;
+}
 
 .services input[type="radio"] {
 	display: none;
