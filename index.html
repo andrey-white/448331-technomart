@@ -27,13 +27,13 @@
 
 		<div class="header-info">
 				<p class="slogan">
-					Интернет магазин<br>
+					Интернет-магазин<br>
 					строительных материалов<br>
 					и инструментов для ремонта
 				</p>
 				<p class="contacts">
 					<span class="header-phone">+7 (812) 555-05-55</span>
-					г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8		
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8		
 				</p>
 				<section class="user-interface">
 					<ul>
@@ -43,17 +43,17 @@
 				</section>
 		</div>
 
-			<nav class="main-header-menu">
-				<ul class="main-menu">
-					<li><a href="index.html">Главная</a></li>
-					<li><a href="#">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Спецпредложения</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
+		<nav class="main-header-menu">
+			<ul class="main-menu">
+				<li><a class="main-menu-first-item" href="index.html">Главная</a></li>
+				<li><a href="#">Компания</a></li>
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Спецпредложения</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a class="main-menu-last-item" href="#">Контакты</a></li>
+			</ul>
+		</nav>
 	</header>
 
 	<main class="index">
@@ -68,10 +68,18 @@
 					<a href="#">На все случаи</a>
 				</div>
 				<div class="promo-slider">
-					<p class="slider-header">
-						<b>Перфораторы</b><br>
-						Настоящие мужские игрушки
-					</p>
+					<div class="promo-slider-1">
+						<p class="slider-header">
+							<b>Перфораторы</b><br>
+							Настоящие мужские игрушки
+						</p>
+					</div>
+					<div class="promo-slider-2 modal">
+						<p class="slider-header">
+							<b>Дрели</b><br>
+							Соседям на радость!
+						</p>
+					</div>
 					<a href="catalog.html">Открыть каталог</a>
 					<button class="left-slide"><span>Предыдущий слайдер</span></button>
 					<button class="right-slide"><span>Следующий слайдер</span></button>
@@ -131,7 +139,7 @@
 					<span class="old-price"><del>30500 Р.</del></span>
 					<span class="new-price">25500 Р.</span>
 				</li>
-				<li class="goods-list-item new">
+				<li class="goods-list-item new-item">
 					<img src="img/bfg_2000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 2000">
 					<p class="item-links">
 						<a class="button-buy" href="#">Купить</a>
@@ -139,7 +147,7 @@
 					</p>
 					<h3> Перфоратор BOSH BFG 2000</h3>
 					<span class="old-price-hidden"><del>25500</del></span>
-					<span class="new-price">25500 Р.</span>
+					<span class="new-price">12500 Р.</span>
 				</li>
 			</ul>
 		</section>
@@ -171,7 +179,7 @@
 				<li>
 					<h3 class="visually-hidden">Интерскол</h3>
 					<a href="#">
-						<img src="img/interscol.png" width="200" height="88" alt="Интерскол">
+						<img src="img/interscol.png" width="200" height="68" alt="Интерскол">
 					</a>
 				</li>
 				<li>
@@ -247,7 +255,7 @@
 
 		<section class="about-company">
 			<div class="about-company-info">
-				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
+				<h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 				<p>
 					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
 					строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -258,7 +266,7 @@
 				</p>
 				<ul>
 					<li>Деловые линии</li>
-					<li>Автотрейдтинг</li>
+					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
 				<a href="#">Подробнее о компании</a>
@@ -281,7 +289,7 @@
 			<div class="footer-contacts">
 				<a href="#" class="footer-logo">ТЕХНОМАРТ</a>
 				<p>
-					г.Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55			
 				</p>
 			</div>
@@ -305,7 +313,7 @@
 		<div class="footer-links">
 			<div class="footer-links-wrapper">
 			<p class="copyrights">
-				&copy; 2010-2017 Компания "Техномарт"<br>
+				&copy; 2010–2017 Компания «Техномарт»<br>
 				Все права защищены
 			</p>
 			<ul class="footer-social-links">
@@ -319,29 +327,31 @@
 			</p>
 
 			<p class="developer">
-				Разработано -<br>
+				Разработано —<br>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 			</div>
 		</div>		
 	</footer>
-	<section class="write-us">
+	<section class="write-us modal">
 			<form>
 				<div class="inputs-wrapper">
 					<p>
 					<label for="first-name">Ваше имя:</label>
-					<input type="text" name="name" id="first-name" placeholder="Представьтесь, пожалуйста">
+					<input type="text" name="name" id="first-name" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" placeholder="Представьтесь, пожалуйста">
 					</p>
 					<p>
 					<label for="contact-email">Ваш e-mail:</label>
-					<input type="email" name="e-mail" id="contact-email" placeholder="Для отправки ответа">
+					<input type="email" name="e-mail" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" id="contact-email" placeholder="Для отправки ответа">
 					</p>
 				</div>
 				<label for="message-text">Текст письма:</label>
-				<textarea name="message"  id="message-text" placeholder="В свободной форме"></textarea>
-								
+				<textarea name="message"  id="message-text" placeholder="В свободной форме"></textarea>	
 				<input type="submit" name="send" value="Отправить">
 			</form>
+	</section>
+	<section class="map modal">
+		
 	</section>
 </body>
 </html>

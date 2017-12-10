@@ -19,7 +19,7 @@
 				</form>
 				<ul class="user-activities">
 					<li class="bookmarks"><a href="#">Закладки: 0</a></li>
-					<li class="basket"><a class="user-activities-active" href="#">Корзина: 0</a></li>
+					<li class="basket"><a class="user-activities-active" href="#">Корзина: 10</a></li>
 					<li class="order"><a href="#">Оформить заказ</a></li>	
 				</ul>		
 			</section>
@@ -27,13 +27,13 @@
 
  		<div class="header-info">
 			<p class="slogan">
-				Интернет магазин<br>
+				Интернет-магазин<br>
 				строительных материалов<br>
 				и инструментов для ремонта
 			</p>
 			<p class="contacts">
 				<span class="header-phone">+7 (812) 555-05-55</span>
-				<span class="contacts-address">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+				<span class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 			</p>
 
 			<section class="user-interface">
@@ -47,13 +47,13 @@
 	
 		<nav class="main-header-menu">
 			<ul class="main-menu">
-				<li><a href="index.html">Главная</a></li>
+				<li><a class="main-menu-first-item" href="index.html">Главная</a></li>
 				<li><a href="#">Компания</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a href="#">Спецпредложения</a></li>
 				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a class="main-menu-last-item" href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -63,7 +63,7 @@
 			<li class="homepage"><a href="#">На главную</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Инструмент</a></li>
-			<li><a href="#">Перфораторы</a></li>
+			<li><a>Перфораторы</a></li>
 
 		</ul>
 
@@ -71,7 +71,7 @@
 
 		<div class="catalog-content-wrapper">
 			<section class="search-filters">  <!--search form-->
-				<form method="get">
+				<form action="https://echo.htmlacademy.ru">
 					<span>Фильтр:</span>
 					<fieldset class="filters-price">
 						<legend>Цена:</legend>
@@ -85,7 +85,7 @@
 	            				<div class="toggle toggle-max"></div>
 							</div>
 							<div class="price-controls">
-								<label class="min-price">от <input name="min-price" type="text" value="10"></label>
+								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
 								<span>-</span>
 	            				<label class="max-price">до <input name="max-price" type="text" value="30000"></label>
 	         				</div>
@@ -93,8 +93,8 @@
 					</fieldset>
 					<fieldset class="filters-manufacturers">
 						<legend>Производители:</legend>
-						<input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosh" id="bosh" checked>
-						<label for="bosh">Bosh</label>
+						<input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" id="bosh" checked>
+						<label for="bosch">Bosch</label>
 						<input class="visually-hidden filter-input-checkbox" type="checkbox" name="interscol" id="interscol" >
 						<label for="interscol">Интерскол</label>
 						<input class="visually-hidden  filter-input-checkbox" type="checkbox" name="makita" id="makita" checked>
@@ -145,7 +145,7 @@
 						<span class="old-price"><del>30500 Р.</del></span>
 						<span class="new-price">25500 Р.</span>
 					</li>
-					<li  class="goods-list-item new">
+					<li  class="goods-list-item new-item">
 	 					<img src="img/bfg_2000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 2000">
 	 					<p class="item-links">
 							<a class="button-buy" href="#">Купить</a>
@@ -165,7 +165,7 @@
 						<span class="old-price"><del>22500 Р.</del></span>
 						<span class="new-price">15500 Р.</span>
 					</li>
-					<li class="goods-list-item new">
+					<li class="goods-list-item new-item">
 	 					<img src="img/bfg_6000.jpg" width="216" height="123" alt="Перфоратор BOSH BFG 6000">
 	 					<p class="item-links">
 							<a class="button-buy" href="#">Купить</a>
@@ -173,7 +173,7 @@
 						</p>
 						<h3> Перфоратор BOSH BFG 6000</h3>
 						<span class="old-price"><del>22500 Р.</del></span>
-						<span class="new-price">15500 Р.</span>
+						<span class="new-price">25500 Р.</span>
 					</li>
 					<li class="goods-list-item">
 	 					<img src="img/bfg_2000.jpg"  width="215" height="123" alt="Перфоратор BOSH BFG 2000">
@@ -185,7 +185,7 @@
 						<span class="old-price hidden"><del>12500 Р.</del></span>
 						<span class="new-price">12500 Р.</span>
 					</li>
-					<li  class="goods-list-item new">
+					<li  class="goods-list-item new-item">
 	 					<img src="img/bfg_3000.jpg"  width="216" height="123" alt="Перфоратор BOSH BFG 3000">
 	 					<p class="item-links">
 							<a class="button-buy" href="#">Купить</a>
@@ -203,7 +203,7 @@
 						</p>
 						<h3> Перфоратор BOSH BFG 6000</h3>
 						<span class="old-price"><del>22500 Р.</del></span>
-						<span class="new-price">15500 Р.</span>
+						<span class="new-price">25500 Р.</span>
 					</li>
 					<li class="goods-list-item">
 	 					<img src="img/bfg_2000.jpg" width="215" height="123" alt="Перфоратор BOSH BFG 2000">
@@ -229,9 +229,9 @@
 			<div class="goods-description-wrapper">
 				<h2>Пара слов о перфораторах</h2>
 				<p>
-					Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка, в<br>
-					ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+					ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 				</p>
 			</div>
 		</section>
@@ -250,7 +250,7 @@
 			<div class="footer-contacts">
 				<a href="#" class="footer-logo">ТЕХНОМАРТ</a>
 				<p>
-					г.Санкт-Петербург, ул. Б.Конюшенная, д 19/8<br>
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 					+7 (812) 555-05-55			
 				</p>
 			</div>
@@ -274,7 +274,7 @@
 		<div class="footer-links">
 			<div class="footer-links-wrapper">
 			<p class="copyrights">
-				&copy; 2010-2017 Компания "Техномарт"<br>
+				&copy; 2010–2017 Компания «Техномарт»<br>
 				Все права защищены
 			</p>
 			<ul class="footer-social-links">
@@ -288,11 +288,17 @@
 			</p>
 
 			<p class="developer">
-				Разработано -<br>
+				Разработано —<br>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 			</div>
-		</div>		
+		</div>	
 	</footer>
+	<section class="cart-add modal">
+		<span>Товар добавлен в корзину!</span>
+		<button class="place-order">Оформить заказ</button>
+		<button class="continue-shopping">Продолжить покупки</button>
+			
+	</section>
 </body>
 </html>
