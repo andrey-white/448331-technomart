@@ -1872,10 +1872,21 @@ a.previous-page {
 }
 
 .about-company-info li {
+	position: relative;	
 	font-size: 18px;
 	line-height: 20px;
 	color: black;
 	margin-bottom: 20px;
+}
+
+.about-company-info li:before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+	left: -37px;
+    top: 8px;
 }
 
 .about-company-info li:last-child {
