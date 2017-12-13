@@ -6,13 +6,13 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">  <!--Подключили шрифты-->
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/stylemin.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<div class="main-header-top">
 			<section class="header-menu">
-				<h1 class="header-logo"><a href="index.html">Техномарт</a></h1>
+				<h1 class="header-logo"><a>Техномарт</a></h1>
 				<form>
 					<label class="visually-hidden" for="search">Поиск</label>
 					<input type="search" name="search" id="search" placeholder="Поиск:">
@@ -27,9 +27,9 @@
 
 		<div class="header-info">
 				<p class="slogan">
-					Интернет-магазин<br>
-					строительных материалов<br>
-					и инструментов для ремонта
+					Интернет-магазин
+					строительных материалов
+					и&nbsp;инструментов для ремонта
 				</p>
 				<p class="contacts">
 					<span class="header-phone">+7 (812) 555-05-55</span>
@@ -68,15 +68,15 @@
 					<a href="#">На все случаи</a>
 				</div>
 				<div class="promo-slider">
-					<div class="promo-slider-1">
+					<div class="promo-slider-1 modal">
 						<p class="slider-header">
-							<b>Перфораторы</b><br>
+							<b>Перфораторы</b>
 							Настоящие мужские игрушки
 						</p>
 					</div>
-					<div class="promo-slider-2 modal">
+					<div class="promo-slider-2  ">
 						<p class="slider-header">
-							<b>Дрели</b><br>
+							<b>Дрели</b>
 							Соседям на радость!
 						</p>
 					</div>
@@ -212,8 +212,8 @@
 		<section class="services">
 			<div class="services-wrapper">
 				<h2>Сервисы</h2>
-				<p>
-					Хороший интернет-магазин отличается от плохого не только ценами!<br>
+				<p class="services-head-paragraph">
+					Хороший интернет-магазин отличается от плохого не только ценами!
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 				</p>
 				<div class="services-wrapper-inner">
@@ -226,7 +226,7 @@
 						<h3 class="delivery-header">Доставка</h3>
 						<p>
 							Мы с удовольствием доставим ваш товар прямо<br>
-							к вашему подъезду совершенно бесплатно!<br>
+							к вашему подъезду совершенно бесплатно!
 							Ведь мы неплохо заработаем,<br>
 							поднимая его на ваш этаж!
 						</p>
@@ -235,8 +235,8 @@
 						<h3 class="guarantee-header">Гарантия</h3>
 						<p>
 							Если купленный у нас товар поломается или заискрит,<br>
-							а также в случае пожара, спровоцированного его возгоранием,<br>
-							вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+							а также в случае пожара, спровоцированного его возгоранием,
+							вы всегда можете быть уверены в нашей гарантии. Мы обменяем
 							сгоревший товар на новый.<br>
 							Дом уж восстановите как-нибудь сами.
 						</p>
@@ -257,11 +257,11 @@
 			<div class="about-company-info">
 				<h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 				<p>
-					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+					Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
 					строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 				</p>
 				<p>
-					Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+					Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многоми транспортными компаниями:
 				</p>
 				<ul>
@@ -275,11 +275,10 @@
 			<div class="about-company-contacts">
 				<h2>Контакты</h2>
 				<p>
-					Вы можете забрать товар сами,<br>
-					заехав в наш офис:
+					Вы можете забрать товар сами, заехав в наш офис:
 				</p>
-				<a href="#"><img src="img/contacts_map.jpg" width="300" height="158" alt="Схема проезда"/></a>
-				<a href="#">Заблудились? Напишите нам!</a>
+				<a class="map-button" href="https://yandex.ru/maps/-/CBacuVHq9C"><img src="img/contacts_map.jpg" width="300" height="158" alt="Схема проезда"/></a>
+				<a class="write-us-button" href="#">Заблудились? Напишите нам!</a>
 			</div>
 		</section>
 	</main>
@@ -287,9 +286,9 @@
 	<footer class="main-footer">
 		<div class="main-footer-wrapper">
 			<div class="footer-contacts">
-				<a href="#" class="footer-logo">ТЕХНОМАРТ</a>
+				<a class="footer-logo">ТЕХНОМАРТ</a>
 				<p>
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					+7 (812) 555-05-55			
 				</p>
 			</div>
@@ -313,7 +312,7 @@
 		<div class="footer-links">
 			<div class="footer-links-wrapper">
 			<p class="copyrights">
-				&copy; 2010–2017 Компания «Техномарт»<br>
+				&copy; 2010–2017 Компания «Техномарт»
 				Все права защищены
 			</p>
 			<ul class="footer-social-links">
@@ -322,12 +321,12 @@
 				<li><a class="instagramm" href="#">Инстаграмм</a></li>
 			</ul>
 			<p class="feedback">
-				Обратная связь:<br>
+				Обратная связь:
 				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 			</p>
 
 			<p class="developer">
-				Разработано —<br>
+				Разработано —
 				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</p>
 			</div>
@@ -349,9 +348,15 @@
 				<textarea name="message"  id="message-text" placeholder="В свободной форме"></textarea>	
 				<input type="submit" name="send" value="Отправить">
 			</form>
+			<button class="modal-close-button" type="button">Закрыть</button>
 	</section>
+
 	<section class="map modal">
-		
+	<h2 class="visually-hidden">Схема проезда</h2>
+	<iframe src="https://yandex.ru/map-widget/v1/-/CBagZZev3D" width="940" height="447" frameborder="0"></iframe>
+	<button class="modal-close-button" type="button">Закрыть</button>	
 	</section>
+
+	<script src="js/scriptmin.js"></script>
 </body>
 </html>

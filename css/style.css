@@ -16,6 +16,7 @@ a {
 .main-header {
 	background-color: #f3f7f9;
 	margin-bottom: 59px;
+	min-width: 960px;
 }
 
 .main-header.inner  {
@@ -497,19 +498,34 @@ section.goods {
 	flex-direction: column;
 }
 
-
-
 .goods-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 700px;
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 }
 
-.popular-items-slider li,
 .goods-list li {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 218px;
+	height: 316px;
+	border: 1px solid #e5e5e5;
+	margin: 0;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.goods-list li:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.popular-items-slider li {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -528,6 +544,9 @@ section.goods {
 	margin-top: 60px;
 	background-color: #f2f6f8;
 	min-height: 261px;
+	margin-left: -10px;
+	margin-right: -10px;
+	min-width: 960px;
 }
 
 .goods-description-wrapper {
@@ -539,7 +558,6 @@ section.goods {
 }
 
 .cart {
-	visibility: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -563,6 +581,7 @@ section.goods {
 
 .breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 	width: 940px;
 	justify-content: left;
 	margin-left: auto;
@@ -627,6 +646,7 @@ main > h1 {
 	margin-left: 52px;
 	margin-top: 49px;
 	margin-bottom: 39px;
+	max-width: 200px;
 }
 
 .contacts {
@@ -1481,9 +1501,6 @@ a.previous-page {
 	padding-right: 32px;
 }
  
-
-
-
 /* пагинация */
 
 .goods-description h2 {
@@ -1523,6 +1540,8 @@ a.previous-page {
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase; 
+	display: block;
+	margin-bottom: 3px;
 }
 
 
@@ -1635,6 +1654,9 @@ a.previous-page {
 	background-color: #f4f8f9;
 	font-family: 'PT Sans', Arial, sans-serif;
 	margin-bottom: 47px;
+	margin-left: -10px;
+	margin-right: -10px;
+	min-width: 960px;
 }
 
 .services-wrapper {
@@ -1705,8 +1727,15 @@ a.previous-page {
 	margin-bottom: 25px;
 }
 
+.about-company-info p:first-of-type {
+	width: 530px;
+
+}
+
+
 .about-company-info p:last-of-type {
 	margin-bottom: 21px;
+	width: 425px;
 }
 
 
@@ -1714,11 +1743,14 @@ a.previous-page {
 .about-company-contacts {
 	display: flex;
 	flex-direction: column;
+	width: 300px;
 }
 
 .about-company-contacts  p {
+	box-sizing: border-box;
 	margin: 0;
 	margin-bottom: 31px;
+	padding-right: 90px;
 }
 
 .about-company-contacts a:last-child {
@@ -1742,6 +1774,19 @@ a.previous-page {
 
 .services p {
 	margin: 0;
+}
+
+.services-head-paragraph {
+	box-sizing: border-box;
+	padding-right: 535px;
+}
+
+.delivery-header + p {
+	padding-right: 355px;
+}
+
+.guarantee-header + p {
+	padding-right: 250px;
 }
 
 
@@ -1913,6 +1958,7 @@ a.previous-page {
 	background-color: #32425c;
 	margin-left: auto;
 	margin-right: auto;
+	min-width: 960px;
 }
 
 .footer-links-wrapper {
@@ -1939,11 +1985,29 @@ a.previous-page {
 
 
 
+.copyrights {
+	box-sizing: border-box;
+	width: 226px;
+}
+
+.feedback {
+	box-sizing: border-box;
+	width: 136px;
+}
+
+.developer {
+	box-sizing: border-box;
+	width: 97px;
+}
+
+
 .footer-links {
 	background-color: #293449;
 }
 
 .footer-contacts p {
+	box-sizing: border-box;
+	width: 340px;
 	font-size: 18px;
     line-height: 24px;
     margin-top: 32px;
@@ -2128,7 +2192,22 @@ a.previous-page {
 	background-position: 0px 320px;
 }
 
-.write-us::before,
+
+.modal-close-button {
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 10px;
+	content: "";
+	width: 21px;
+	height: 21px;
+	background-image: url(../img/form-2.svg);
+	cursor: pointer;
+	font-size: 0;
+  	background-color: transparent;
+  	border: 0;
+}
+
 .map::before,
 .cart-add::before {
 	display: block;
@@ -2362,11 +2441,17 @@ a.previous-page {
 	background-position: 50% 50%;
 }
 
-
-
-
 .modal {
 	display: none;
+}
+
+.modal-show {
+ 	display: block;
+ 	animation: animation-popup 0.5s;
+}
+
+.modal-error {
+	animation: shake 0.5s;
 }
 
 .visually-hidden {
@@ -2377,3 +2462,42 @@ a.previous-page {
   margin: -1px;
 }
 
+@keyframes animation-popup {
+  0% {
+  	transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
