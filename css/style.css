@@ -2501,3 +2501,7 @@ a.previous-page {
     transform: translateX(10px);
   }
 }
+
+.map iframe {
+	border: 0;
+}
