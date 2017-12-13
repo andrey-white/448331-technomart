@@ -1649,7 +1649,6 @@ a.previous-page {
 	background-image: url(../img/new-flag.png);
 }
 
-
 .services {
 	background-color: #f4f8f9;
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -1674,7 +1673,6 @@ a.previous-page {
 	justify-content: space-between;
 	margin-top: 71px;
 }
-
 
 .services form {
 	position: relative;
@@ -1732,13 +1730,10 @@ a.previous-page {
 
 }
 
-
 .about-company-info p:last-of-type {
 	margin-bottom: 21px;
 	width: 425px;
 }
-
-
 
 .about-company-contacts {
 	display: flex;
@@ -1789,7 +1784,6 @@ a.previous-page {
 	padding-right: 250px;
 }
 
-
 .services h2,
 .about-company h2 {
 	font-size: 30px;
@@ -1811,11 +1805,6 @@ a.previous-page {
 	margin-top: 68px;
 	margin-bottom: 29px;
 }
-
-
-
-
-
 
 .services h3 {
 	font-size: 36px;
@@ -1855,8 +1844,6 @@ a.previous-page {
 	background-position: 93% 100%;
 }
 
-
-
 .delivery {
 	background-image: url(../img/delivery.png);
 	background-repeat: no-repeat;
@@ -1875,8 +1862,6 @@ a.previous-page {
 	display: none;
 	
 }
-
-
 
 /* стилизация кнопок сервиса*/
 
@@ -1907,12 +1892,7 @@ a.previous-page {
 	background-color: white;
 }
 
-
-
-
 /* стилизация кнопок сервиса*/
-
-
 
 .about-company a:last-child {
 	color: white;
@@ -1951,7 +1931,6 @@ a.previous-page {
 	margin-bottom: 36px;
 }
 
-
 /* стилизация футера */
 
 .main-footer {
@@ -1981,10 +1960,6 @@ a.previous-page {
 
 }
 
-
-
-
-
 .copyrights {
 	box-sizing: border-box;
 	width: 226px;
@@ -1999,7 +1974,6 @@ a.previous-page {
 	box-sizing: border-box;
 	width: 97px;
 }
-
 
 .footer-links {
 	background-color: #293449;
@@ -2062,7 +2036,6 @@ a.previous-page {
 	text-decoration: none;
 }
 
-
 .footer-navigation li,
 .footer-navigation-bottom li {
 	margin-left: 59px;
@@ -2091,8 +2064,6 @@ a.previous-page {
 	color: #ee3643;
 }
 
-
-
 .feedback {
     margin: 0;
     margin-left: 64px;
@@ -2103,8 +2074,6 @@ a.previous-page {
 }
 
 /* стилизация футера */
-
-
 
 .popular-items {
 	width: 940px;
@@ -2121,8 +2090,6 @@ a.previous-page {
 	margin: 0;
 	flex-wrap: wrap;
 }
-
-
 
 .popular-manufacturers {
 	width: 940px;
@@ -2191,7 +2158,6 @@ a.previous-page {
 	background-size: 620px 112px;
 	background-position: 0px 320px;
 }
-
 
 .modal-close-button {
 	display: block;
@@ -2309,7 +2275,6 @@ a.previous-page {
 	box-shadow: 0 0 10px 5px #c8c6c6;
 }
 
-
 /* модальное окно */
 
 .footer-social-links {
@@ -2320,7 +2285,6 @@ a.previous-page {
     margin-left: 112px;
     margin-top: 3px;
 }
-
 
 .footer-social-links li {
 	font-size: 0;
@@ -2339,7 +2303,6 @@ a.previous-page {
 	width: 41px;
 	height: 41px;
 }
-
 
 .footer-social-links .facebook {
 	display: flex;
@@ -2364,7 +2327,6 @@ a.previous-page {
 	width: 41px;
 	height: 41px;
 }
-
 
 .instagramm:hover,
 .facebook:hover,
